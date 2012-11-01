@@ -22,6 +22,7 @@ Features and Changes
   suggestions/patches welcome!)
 - Forward and reverse commutation supported, including RC-car style
   reverse-neutral-forward PPM ranges, with optional braking
+- switching to GCC toolchain
 
 Supported (Tested) Hardware
 ---------------------------
