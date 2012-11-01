@@ -32,8 +32,8 @@ tgy.asm : ;
 	$(CC) $(CFLAGS) $(ASFLAGS) -o $@ $< 
 
 #/opt/local/avr/lib/avr4/crtm8.o 
-%.elf : %.S.o TWISlaveMem14.c.o
-	$(CC) $(LDFLAGS) -o $@ $< TWISlaveMem14.c.o
+%.elf : %.S.o embedded-atmel-twi/TWISlaveMem14.c.o
+	$(CC) $(LDFLAGS) -o $@ $< embedded-atmel-twi/TWISlaveMem14.c.o
 #	replaces the .if pm_hi8(pwm_off) test in tgy.asm, which must happen after link-time, of course!
 #	note that the rshift($1, 1) is equivalent to ($1 >> 1) and is because IJMP is word-oriented
 #	(look up the difference between hi8 and pm_hi8)
